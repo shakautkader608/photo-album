@@ -6,121 +6,124 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Photo-Album</title>
         <style>
-            .photo-album{
+            .photo-album {
                 display: flex;
                 flex-wrap: wrap;
             }
-            .photo-frame{
+            .photo-frame {
                 width: 200px;
                 height: 200px;
                 border: 5px solid red;
                 border-radius: 5px;
-                text-align: center;  
+                text-align: center;
                 position: relative;
                 margin: 5px;
+                overflow: hidden;
             }
-            
-            .photo-frame img{
-                width: 100%;
-            }
-            
 
-            .photo-content{
-                background-color: #a726263f;
+            .photo-frame img {
+                width: 100%;
+                
+            }
+            .photo-frame:hover .photo img{
+                transform: scale(1.2);
+                transition: 2s;
+            }
+            .photo-content {
+                background-color: #c44b4b71;
                 transition: all linear 0.3s;
                 position: absolute;
                 top: 0;
                 opacity: 0;
-   
+                height: 200px
             }
-            .photo-content h3{
-                background-color: rgba(57, 207, 207, 0.329);
+            .photo-content h3 {
+                background-color: rgba(57, 207, 207, 0.521);
                 color: white;
             }
-            .photo-content p{
-               
+            .photo-content p {
                 color: white;
             }
-            .photo-frame:hover .photo-content{
-                opacity: 1;  
-            } 
+            .photo-frame:hover .photo-content {
+                opacity: 1;
+            }
         </style>
     </head>
     <body>
         <h1>Photo-Album</h1>
         <section class="photo-album">
-             <div class="photo-frame">
+            <div class="photo-frame">
                 <div class="photo">
-                    <img src="../images/Ronaldo.jpg" alt="">
+                    <img src="../images/Ronaldo.jpg" alt="" />
                 </div>
                 <div class="photo-content">
                     <h3>Cristiano Ronaldo</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam in enim veniam eos, at natus dolores recusandae blanditiis esse consectetur!</p>
                 </div>
-             </div>
-             <div class="photo-frame">
+            </div>
+            <div class="photo-frame">
                 <div class="photo">
-                    <img src="../images/Ronaldo.jpg" alt="">
+                    <img src="../images/Ronaldo.jpg" alt="" />
                 </div>
                 <div class="photo-content">
                     <h3>Cristiano Ronaldo</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam in enim veniam eos, at natus dolores recusandae blanditiis esse consectetur!</p>
                 </div>
-             </div>
-             <div class="photo-frame">
+            </div>
+            <div class="photo-frame">
                 <div class="photo">
-                    <img src="../images/Ronaldo.jpg" alt="">
+                    <img src="../images/Ronaldo.jpg" alt="" />
                 </div>
                 <div class="photo-content">
                     <h3>Cristiano Ronaldo</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam in enim veniam eos, at natus dolores recusandae blanditiis esse consectetur!</p>
                 </div>
-             </div>
-             <div class="photo-frame">
+            </div>
+            <div class="photo-frame">
                 <div class="photo">
-                    <img src="../images/Ronaldo.jpg" alt="">
+                    <img src="../images/Ronaldo.jpg" alt="" />
                 </div>
                 <div class="photo-content">
                     <h3>Cristiano Ronaldo</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam in enim veniam eos, at natus dolores recusandae blanditiis esse consectetur!</p>
                 </div>
-             </div>
-             <div class="photo-frame">
+            </div>
+            <div class="photo-frame">
                 <div class="photo">
-                    <img src="../images/Ronaldo.jpg" alt="">
+                    <img src="../images/Ronaldo.jpg" alt="" />
                 </div>
                 <div class="photo-content">
                     <h3>Cristiano Ronaldo</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam in enim veniam eos, at natus dolores recusandae blanditiis esse consectetur!</p>
                 </div>
-             </div>
-             <div class="photo-frame">
+            </div>
+            <div class="photo-frame">
                 <div class="photo">
-                    <img src="../images/Ronaldo.jpg" alt="">
+                    <img src="../images/Ronaldo.jpg" alt="" />
                 </div>
                 <div class="photo-content">
                     <h3>Cristiano Ronaldo</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam in enim veniam eos, at natus dolores recusandae blanditiis esse consectetur!</p>
                 </div>
-             </div>
-             <div class="photo-frame">
+            </div>
+            <div class="photo-frame">
                 <div class="photo">
-                    <img src="../images/Ronaldo.jpg" alt="">
+                    <img src="../images/Ronaldo.jpg" alt="" />
                 </div>
                 <div class="photo-content">
                     <h3>Cristiano Ronaldo</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam in enim veniam eos, at natus dolores recusandae blanditiis esse consectetur!</p>
                 </div>
-             </div>
-             <div class="photo-frame">
+            </div>
+            <div class="photo-frame">
                 <div class="photo">
-                    <img src="../images/Ronaldo.jpg" alt="">
+                    <img src="../images/Ronaldo.jpg" alt="" />
                 </div>
                 <div class="photo-content">
                     <h3>Cristiano Ronaldo</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam in enim veniam eos, at natus dolores recusandae blanditiis esse consectetur!</p>
                 </div>
-             </div>
+            </div>
         </section>
     </body>
 </html>
